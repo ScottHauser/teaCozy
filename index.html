@@ -4,57 +4,179 @@
   <title>Tea Cozy</title>
 
   <link href=".resources/css/styles.css" type="text/css" rel="stylesheet">
+
 <style>
   .mission {
     background: url("file:///Users/scotthauser/Desktop/projects/teaCozy/resources/images/img-mission-background.jpg") no-repeat;
     display: flex;
-    padding-top: 70px;
-    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding-top: 69px;
+    height: 700px;
     }
 
+    .mission .box {
+      display: block;
+      width: 1200px;
+      background-color: #000000;
+      margin: auto;
+      z-index: 2;
+      }
+.products {
+  text-align: center;
+}
+.month {
+display: flex;
+width: 1000px;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+align-content: center;
+margin: auto;
+}
     .locations {
       background: url("file:///Users/scotthauser/Desktop/projects/teaCozy/resources/images/img-locations-background.jpg") no-repeat;
       display: flex;
+      flex-wrap: wrap;
       margin: auto;
-      border: 1px solid black;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
+      text-align: center;
+}
+.location-box {
+width: 300px;
+height: 200px;
+background-color: black;
+margin: 15px; 20px; auto 20px;
+}
+.contact {
+  height: 200px;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  width: 1200px;
+  height: 69px;
+  position: fixed;
+  background: black;
+  border-bottom: 1px solid seashell;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+      }
+nav span {
+  display: inline-block;
+  justify-content: space-between;
+  padding: 20px 15px;
     }
+nav span a {
+     text-decoration: underline;
+     color: seashell;
+   }
+footer {
+  margin-left: 20px; text-align: left;
+}
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-grow: 1;
+      margin-left: 10px;
+      text-align: left;
+    }
+    .logo span {
+      opacity: 0.9;
+    }
+      .logo img {
+        height: 50px;
+      }
+      body {
+        margin: auto 60px;
+        background: #000000;
+        color: seashell;
+        font-family: Helvetica, sans-serif;
+        opacity:0.9;
+      }
 </style>
 
 </head>
 
-<body style="background: #000000; color: seashell; font-family: Helvetic, sans-serif; text-align: center;">
+<body>
 
-<header style="width: 1200px; height: 69px; position: fixed; background: #000000; border: 1px solid black">
-  <img style="margin-left: 10px; text-align: left; height: 50px; opacity: 0.9;" src="file:///Users/scotthauser/Desktop/projects/teaCozy/resources/images/img-tea-cozy-logo.png">
+<header>
+  <div class="logo"><img src="file:///Users/scotthauser/Desktop/projects/teaCozy/resources/images/img-tea-cozy-logo.png"></div>
 
+<nav>
+  <span><a href="#mission">Mission</a></span>
+  <span><a href="#featured-teas">Featured Tea</a></span>
+  <span><a href="#locations">Locations</a></span>
+</nav>
 </header>
 
 <div class="container" style="width: 1200px;">
 
-  <div class="mission" style="height: 700px;">
+  <div class="mission" id="mission">
+    <div class="box">
+
+      <h2>Our Mission</h2>
+      <h4>Handpicked, Artisanally Curated, Free Range, Sustainable, Smalll Batch, Fair Trade, Organic Tea</h4>
+    </div>
   </div>
 
-  <div class="products" style="display: flex; flex-direction: column; width: 1000px;">
+  <div class="products" id="featured-teas">
     <h2>Teas of the Month</h2>
     <p>What's Steeping at The Tea Cozy?</p>
     </div><!-- end products -->
 
-<div class="month" style="display: flex; width: 1000px; flex-direction: row; flex-wrap: wrap; justify-content: space-around; align-items: center; margin: auto;">
+<div class="month">
 
-<img style="width: 300px; height: 200px;" src="file:///Users/scotthauser/Desktop/projects/teaCozy/resources/images/img-berryblitz.jpg">
-<img style="width: 300px; height: 200px;" src="file:///Users/scotthauser/Desktop/projects/teaCozy/resources/images/img-spiced-rum.jpg">
-  <img style="width: 300px; height: 200px;" src="file:///Users/scotthauser/Desktop/projects/teaCozy/resources/images/img-donut.jpg">
-  <img style="width: 300px; height: 200px;" src="file:///Users/scotthauser/Desktop/projects/teaCozy/resources/images/img-myrtle-ave.jpg">
-  <img style="width: 300px; height: 200px;" src="file:///Users/scotthauser/Desktop/projects/teaCozy/resources/images/img-bedford-bizarre.jpg">
+<div class="tea-photo"><img style="width: 300px; height: 200px;" src="file:///Users/scotthauser/Desktop/projects/teaCozy/resources/images/img-berryblitz.jpg">
+<h4 style="text-align: center; margin-top: 10px;">Fall Berry Blitz Tea</h4></div>
+<div class="tea-photo"><img style="width: 300px; height: 200px;" src="file:///Users/scotthauser/Desktop/projects/teaCozy/resources/images/img-spiced-rum.jpg">
+  <h4 style="text-align: center; margin-top: 10px;">Fall Berry Blitz Tea</h4></div>
+  <div class="tea-photo"><img style="width: 300px; height: 200px;" src="file:///Users/scotthauser/Desktop/projects/teaCozy/resources/images/img-donut.jpg">
+    <h4 style="text-align: center; margin-top: 10px;">Fall Berry Blitz Tea</h4></div>
+  <div class="tea-photo"><img style="width: 300px; height: 200px;" src="file:///Users/scotthauser/Desktop/projects/teaCozy/resources/images/img-myrtle-ave.jpg">
+    <h4 style="text-align: center; margin-top: 10px;">Fall Berry Blitz Tea</h4></div>
+  <div class="tea-photo"><img style="width: 300px; height: 200px;" src="file:///Users/scotthauser/Desktop/projects/teaCozy/resources/images/img-bedford-bizarre.jpg">
+    <h4 style="text-align: center; margin-top: 10px;">Fall Berry Blitz Tea</h4></div>
 
 </div><!-- end months -->
 
 
-<div class="locations" style="height: 500px;">
+<div class="locations" id="locations">
+<!--<h2>Locations</h2>-->
+
+  <div class="location-box">
+    <h3>Downtown</h3>
+    <h4>384 West 4th St.</h4>
+    <h4>Suite 108</h4>
+    <h4>Portland, Maine</h4>
+  </div>
+  <div class="location-box" >
+<h3>East Bayside</h3>
+<h4>3433 Phisherman's Avenue</h4>
+<h4>(Northwest Corner)</h4>
+<h4>Portland, Maine</h4>
+
+  </div>
+  <div class="location-box">
+<h3>Oakdale</h3>
+<h4>515 Crescent Avenue</h4>
+<h4>Second Floor</h4>
+<h4>Portland, Maine</h4>
+  </div>
+
 
 </div><!-- end locations -->
 
-<div class="contact" style="height: 200px; text-align: center;">
+<div class="contact">
   <h2>The Tea Cozy</h2>
   <h5>contact@theteacozy.com</h5>
   <h5>917-555-8904</h5>
@@ -62,7 +184,7 @@
 </div><!-- contact-->
 
 
-<footer style="margin-left: 20px; text-align: left;">
+<footer>
   <p>&copy; The Tea Cozy 2017</p>
 
 </footer>
