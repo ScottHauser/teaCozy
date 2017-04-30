@@ -6,6 +6,7 @@
   <link href=".resources/css/styles.css" type="text/css" rel="stylesheet">
 
 <style>
+/* div for mission */
   .mission {
     background: url("file:///Users/scotthauser/Desktop/projects/teaCozy/resources/images/img-mission-background.jpg") no-repeat;
     display: flex;
@@ -16,7 +17,7 @@
     padding-top: 69px;
     height: 700px;
     }
-
+/* div for the mission across page */
     .mission .box {
       display: block;
       width: 1200px;
@@ -24,9 +25,14 @@
       margin: auto;
       z-index: 2;
       }
+
+      /* div for products section */
 .products {
   text-align: center;
 }
+
+/* div for monthly specials */
+
 .month {
 display: flex;
 width: 1000px;
@@ -36,6 +42,9 @@ justify-content: space-around;
 align-content: center;
 margin: auto;
 }
+
+/* div for location section */
+
     .locations {
       background: url("file:///Users/scotthauser/Desktop/projects/teaCozy/resources/images/img-locations-background.jpg") no-repeat;
       display: flex;
@@ -46,12 +55,16 @@ margin: auto;
       height: 500px;
       text-align: center;
 }
+/* div for boxes to highlight locations */
+
 .location-box {
 width: 300px;
-height: 200px;
+height: 300px;
 background-color: black;
 margin: 15px; 20px; auto 20px;
 }
+/* div for contact section */
+
 .contact {
   height: 200px;
   text-align: center;
@@ -101,6 +114,7 @@ footer {
         background: #000000;
         color: seashell;
         font-family: Helvetica, sans-serif;
+        font-size: 22px;
         opacity:0.9;
       }
 </style>
@@ -151,7 +165,7 @@ footer {
 
 
 <div class="locations" id="locations">
-<!--<h2>Locations</h2>-->
+<h2 style="display: block; margin: 0; padding: 10px;">Locations</h2>
 
   <div class="location-box">
     <h3>Downtown</h3>
